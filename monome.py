@@ -48,7 +48,7 @@ class Monome(aiosc.OSCProtocol):
         self.width = None
         self.height = None
         self.rotation = None
-        self.varibright = False
+        self.varibright = True
 
         super().__init__(handlers={
             '/sys/disconnect': lambda *args: self.disconnect,
